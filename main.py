@@ -1,3 +1,4 @@
+#importing libraries
 import streamlit as st
 import pandas as pd
 tabel =pd.DataFrame({"Anime": ["Kanojo Okarishimasu","Naruto","Bleach","Frieren","Cyberpunk Edgerunners","Roshidere"], "Category": [11,12,13,14,15,16]})
@@ -25,3 +26,12 @@ st.table(tabel)
 st.dataframe(tabel)
 
 #dataframe and table are not the same
+
+#adding image
+st.image("chizuru 2 edit.jpg", caption="My Waifu", width=600)
+
+#adding audio
+st.write("Different Heaven")
+st.audio("Different Heaven - Far Away [NCS Release].mp3")
+
+st.video("outro.mp4")
