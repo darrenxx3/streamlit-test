@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+tabel =pd.DataFrame({"Anime": ["Kanojo Okarishimasu","Naruto","Bleach","Frieren","Cyberpunk Edgerunners","Roshidere"], "Category": [11,12,13,14,15,16]})
 
 st.title("Hello World, I'm Darren")
 st.subheader("This is streamlit testing")
@@ -18,4 +20,5 @@ def funct():
 st.code(code, language="python")
 
 st.write("# h1")
-st.metric()
+st.metric(label="Wind Speed", value="190ms-1", delta="-1.4ms\^-1")
+st.table(tabel)
