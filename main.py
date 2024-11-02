@@ -16,3 +16,6 @@ print("hello world")
 def funct():
     return 0;"""
 st.code(code, language="python")
+
+st.write("# h1")
+st.metric()
